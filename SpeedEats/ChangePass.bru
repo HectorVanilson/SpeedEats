@@ -1,0 +1,21 @@
+meta {
+  name: ChangePass
+  type: http
+  seq: 11
+}
+
+patch {
+  url: http://localhost:3000/users/password
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImQzODE5ZGRiLThmOTctNGIzMC04MzhiLWU1YzBlYWIwNjU5MCIsImlhdCI6MTcxNDY2MDc3NCwiZXhwIjoxNzE0ODMzNTc0fQ.sSrb2ptc8L6JUw2eg4D5PbZ9nOX2UAPptDMfjhCQnWk
+}
+
+body:json {
+  {
+    "password" : "vanilhkk"
+  }
+}

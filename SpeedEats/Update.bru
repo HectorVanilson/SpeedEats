@@ -1,0 +1,23 @@
+meta {
+  name: Update
+  type: http
+  seq: 8
+}
+
+put {
+  url: http://localhost:3000/users
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImQzODE5ZGRiLThmOTctNGIzMC04MzhiLWU1YzBlYWIwNjU5MCIsImlhdCI6MTcxNDA1ODQ3NywiZXhwIjoxNzE0MjMxMjc3fQ.yaqaLuvR7CZGpYblEiCOjTKQ6mlHcEdRHH3Mn30eD4s
+}
+
+body:json {
+  {
+  
+    "name": "vani"
+   
+  }
+}

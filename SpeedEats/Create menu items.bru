@@ -1,0 +1,19 @@
+meta {
+  name: Create menu items
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:3000/menuItems
+  body: json
+  auth: none
+}
+
+body:json {
+  {"name": "Hamburguer", 
+  "price": "120",
+  "description":"Com piripiri",
+  "deliveryTime":"17h20"
+  }
+}

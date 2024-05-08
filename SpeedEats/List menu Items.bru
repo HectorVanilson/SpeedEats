@@ -1,0 +1,16 @@
+meta {
+  name: List menu Items
+  type: http
+  seq: 5
+}
+
+get {
+  url: http://localhost:3000/menuItems?name=Hamburguer
+  body: none
+  auth: none
+}
+
+query {
+  name: Hamburguer
+  ~name: Pizza
+}

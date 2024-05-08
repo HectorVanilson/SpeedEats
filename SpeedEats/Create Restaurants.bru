@@ -1,0 +1,20 @@
+meta {
+  name: Create Restaurants
+  type: http
+  seq: 6
+}
+
+post {
+  url: http://localhost:3000/restaurants
+  body: json
+  auth: none
+}
+
+body:json {
+  {"userName": "Vani", 
+   "password": "vanilsonman", 
+   "restaurantEmail": "hengichefsabores@gmail.com",
+   "restaurantName": "Hengichef Sabores", 
+   "restaurantContact": "862589651"
+  }
+}

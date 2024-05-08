@@ -1,0 +1,25 @@
+meta {
+  name: Avatar
+  type: http
+  seq: 12
+}
+
+patch {
+  url: http://localhost:3000/users/avatar
+  body: multipartForm
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImQzODE5ZGRiLThmOTctNGIzMC04MzhiLWU1YzBlYWIwNjU5MCIsImlhdCI6MTcxNTAwMzExMywiZXhwIjoxNzE1MTc1OTEzfQ.MaeQIJCYdxC4bryeyzLBBBWnSJi1P1roEXAWFnF8fn0
+}
+
+body:json {
+  {
+    
+  }
+}
+
+body:multipart-form {
+  avatar: @file(C:\Users\Cs Tech\Pictures\Screenshots\Screenshot (16).png)
+}
