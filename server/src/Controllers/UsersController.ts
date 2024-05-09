@@ -107,6 +107,7 @@ export class UsersController{
 
     async changeAvatar(request: FastifyRequest, reply: FastifyReply){
         const file=await request.file()
+        console.log("upload4");
         console.log(file)
 
         
